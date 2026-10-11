@@ -1,0 +1,22 @@
+{
+  "name": "kindreport-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jaipur-first waste reporting backend API service.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test **/*.test.js",
+    "indexes": "node scripts/create-mongo-indexes.js",
+    "seed": "node scripts/seed-mongo.js",
+    "smoke": "node scripts/smoke-api.js",
+    "verify:mongo": "node scripts/verify-mongo.js"
+  },
+  "dependencies": {
+    "mongodb": "^7.7.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

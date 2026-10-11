@@ -1,0 +1,28 @@
+{
+  "name": "kindreport-jaipur",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jaipur-first waste reporting and civic operations prototype.",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:all": "node scripts/dev.js",
+    "backend:dev": "node backend/server.js",
+    "backend:indexes": "node backend/scripts/create-mongo-indexes.js",
+    "backend:import:wards": "node backend/scripts/import-wards-geojson.js",
+    "backend:normalize:wards": "node backend/scripts/normalize-wards-geojson.js",
+    "backend:seed": "node backend/scripts/seed-mongo.js",
+    "backend:smoke": "node backend/scripts/smoke-api.js",
+    "backend:test": "node --test backend/**/*.test.js",
+    "backend:validate:wards": "node backend/scripts/validate-ward-points.js",
+    "backend:verify:mongo": "node backend/scripts/verify-mongo.js",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "mongodb": "^7.7.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
